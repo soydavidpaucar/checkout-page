@@ -52,6 +52,7 @@ h4 {
 .title {
     padding-top: 3.2rem;
     padding-bottom: 2.1rem;
+    max-width: 100%;
 }
 
 /* MAIN -- DETAILS */
