@@ -1,1 +1,534 @@
+@charset "UTF-8";
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap");
+/* VARIABLES */
+/* MIXINS */
+/* GLOBALS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
+html {
+    font-size: 62.5%;
+}
+
+h1 {
+    color: #4E5150;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+h2 {
+    color: #4E5150;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+h3 {
+    color: #F2994A;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+h4 {
+    color: #4E5150;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.container {
+    max-width: 144rem;
+    padding: 0 1.3rem;
+    margin: 0 auto;
+}
+
+/* HEADER */
+.title {
+    padding-top: 3.2rem;
+    padding-bottom: 2.1rem;
+}
+
+/* MAIN -- DETAILS */
+.checkout-information__details {
+    background-color: #F2F2F2;
+    padding-top: 3.1rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+    padding-bottom: 2.1rem;
+    border-radius: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.9rem;
+}
+
+.checkout-information__details__products {
+    display: flex;
+    margin-bottom: 2.8rem;
+}
+
+.checkout-information__details__products figure {
+    max-width: 12.4rem;
+}
+
+.checkout-information__details__products figure img {
+    width: 100%;
+    border-radius: 1.3rem;
+}
+
+.checkout-information__details__products__description {
+    padding-left: 1.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.checkout-information__details__products__description--info h2 {
+    margin-bottom: 0.5rem;
+}
+
+.checkout-information__details__products__description--price {
+    display: flex;
+    align-items: center;
+}
+
+.checkout-information__details__products__description--price h3 {
+    padding-right: 1rem;
+}
+
+.checkout-information__details__products__description--price h4 {
+    text-decoration-line: line-through;
+}
+
+.checkout-information__details__products__description--quantity__box {
+    padding: 1.5rem 1rem;
+    align-items: center;
+    display: flex;
+    border: 1px solid #828282;
+    border-radius: 1.2rem;
+    justify-content: space-between;
+    height: 4.9rem;
+    width: 12.2rem;
+}
+
+.checkout-information__details__products__description--quantity__box span {
+    color: #828282;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: none;
+    background-color: #E0E0E0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.4rem;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    font-size: 2rem;
+}
+
+.checkout-information__details__products__description--quantity__box input[type=number] {
+    -moz-appearance: textfield;
+    outline: none;
+    border: none;
+    width: 3rem;
+    text-align: center;
+    background-color: transparent;
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.checkout-information__details__products__description--quantity__box input[type=number]::-webkit-outer-spin-button,
+.checkout-information__details__products__description--quantity__box input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.checkout-information__details__products:nth-last-child(2) {
+    margin-bottom: 8.6rem;
+}
+
+.checkout-information__details__billing hr {
+    border: 1px solid #BDBDBD;
+    margin-bottom: 1rem;
+}
+
+.checkout-information__details__billing__shipping {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.checkout-information__details__billing__shipping h3 {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.checkout-information__details__billing__shipping h4 {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.checkout-information__details__billing__total {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.checkout-information__details__billing__total h3 {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.checkout-information__details__billing__total h4 {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.checkout-information__form__contact {
+    margin-bottom: 4.5rem;
+}
+
+.checkout-information__form__contact h2 {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+}
+
+.checkout-information__form__box {
+    margin-bottom: 1.7rem;
+}
+
+.checkout-information__form__box label {
+    display: inline-block;
+    color: #4F4F4F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.checkout-information__form__box__location {
+    display: flex;
+    justify-content: space-between;
+    gap: 2.4rem;
+}
+
+.checkout-information__form__box--agree {
+    margin-top: 1.7rem;
+    display: flex;
+    align-items: center;
+}
+
+.checkout-information__form__box--agree input[type=checkbox] {
+    appearance: none;
+    width: 21px;
+    height: 21px;
+    cursor: pointer;
+    font-size: 17px;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkout-information__form__box--agree input[type=checkbox]:checked:after {
+    content: "✔";
+    color: #828282;
+}
+
+.checkout-information__form__box--agree label {
+    margin-bottom: 0;
+    margin-left: 0.8rem;
+    color: #4F4F4F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.checkout-information__form__box__button {
+    text-align: right;
+    margin-bottom: 9.5rem;
+}
+
+.checkout-information__form__box__button button {
+    color: #FFFFFF;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    background-color: #F2994A;
+    display: inline-block;
+    padding: 1.7rem 4.5rem;
+    outline: none;
+    border: none;
+    border-radius: 1.2rem;
+    cursor: pointer;
+}
+
+.checkout-information__form--input {
+    align-items: center;
+    display: flex;
+    border: 0.1rem solid #828282;
+    border-radius: 1.2rem;
+    padding: 1.2rem 3.9rem 1.2rem 1.2rem;
+}
+
+.checkout-information__form--input span {
+    color: #828282;
+    margin-right: 1.2rem;
+}
+
+.checkout-information__form--input input {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.checkout-information__form--input input::placeholder {
+    color: #828282;
+}
+
+.checkout-information__form--input--location {
+    align-items: center;
+    display: flex;
+    border: 0.1rem solid #828282;
+    border-radius: 1.2rem;
+    padding: 1.2rem 1.4rem 1.2rem 1.2rem;
+    position: relative;
+}
+
+.checkout-information__form--input--location span {
+    color: #828282;
+    margin-right: 1.2rem;
+}
+
+.checkout-information__form--input--location--select {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.checkout-information__form--input--location--select select {
+    color: #828282;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    width: 100%;
+    border: none;
+    outline: none;
+    position: relative;
+    appearance: none;
+}
+
+.checkout-information__form--input--location--select span {
+    color: #828282;
+    background-color: #E0E0E0;
+    margin-right: 0;
+    position: absolute;
+    right: 1.2rem;
+    border-radius: 0.4rem;
+}
+
+.checkout-information__form--input--location input {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    display: inline-block;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.checkout-information__form--input--location input::placeholder {
+    color: #828282;
+}
+
+.checkout-information__form__shipping {
+    margin-bottom: 1.7rem;
+}
+
+.checkout-information__form__shipping h2 {
+    color: #333333;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 1.1rem;
+}
+
+.checkout-information__form__location__info {
+    flex-basis: 50%;
+}
+
+.checkout-information__form__location__info label {
+    display: inline-block;
+    color: #4F4F4F;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-bottom: 2.4rem;
+}
+
+.footer h5 {
+    color: #BDBDBD;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 1024px) {
+    h1 {
+        font-size: 3.6rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    .container {
+        padding: 0 24rem;
+    }
+
+    .title {
+        padding-top: 6.4rem;
+        margin-bottom: 5.1rem;
+    }
+
+    .checkout-information {
+        display: flex;
+        gap: 11.2rem;
+        justify-content: space-between;
+        max-width: 100%;
+    }
+
+    .checkout-information__details {
+        order: 2;
+        height: 100%;
+        width: 100%;
+        max-width: 38.3rem;
+    }
+
+    .checkout-information__details__products__description--quantity__box {
+        height: 5.2rem;
+        width: 13.5rem;
+    }
+
+    .checkout-information__form {
+        order: 1;
+        width: 100%;
+    }
+
+    .checkout-information__form__box {
+        margin-bottom: 2rem;
+    }
+
+    .checkout-information__form__box label {
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .checkout-information__form__box--agree {
+        margin-top: 2rem;
+    }
+
+    .checkout-information__form__box--agree label {
+        margin-bottom: 0;
+        margin-left: 1.1rem;
+    }
+
+    .checkout-information__form__contact {
+        margin-bottom: 5.8rem;
+    }
+
+    .checkout-information__form__contact h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .checkout-information__form__shipping h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .checkout-information__form__location__info label {
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+
+    .checkout-information__form--input {
+        padding: 1.8rem 1.4rem;
+    }
+
+    .checkout-information__form--input span {
+        margin-right: 1.8rem;
+    }
+
+    .checkout-information__form--input input {
+        font-size: 1.6rem;
+    }
+
+    .checkout-information__form--input--location {
+        padding: 1.8rem 1.4rem;
+    }
+
+    .checkout-information__form--input--location span {
+        margin-right: 1.8rem;
+    }
+
+    .checkout-information__form--input--location span:last-child {
+        margin-right: 1.1rem;
+    }
+
+    .checkout-information__form--input--location input {
+        font-size: 1.6rem;
+    }
+
+    .checkout-information__form--input--location--select select {
+        font-size: 1.6rem;
+    }
+}
